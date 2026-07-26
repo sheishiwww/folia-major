@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://api-enhanced-five-nu.vercel.app/:path*"
+    }
+  ]
+}
