@@ -1,19 +1,8 @@
 {
   "rewrites": [
-    // 新增：放行video文件夹视频，不会跳首页
-    {
-      "source": "/video/:path*",
-      "destination": "/video/:path*"
-    },
-    // 你原来的后端api转发不动
     {
       "source": "/api/:path*",
       "destination": "https://api-enhanced-five-nu.vercel.app/:path*"
-    },
-    // 兜底：其他页面路由跳转首页（单页应用必备）
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
     }
   ]
 }
